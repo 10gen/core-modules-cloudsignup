@@ -1,0 +1,10 @@
+
+<div class="form-su" style="padding: 1em 2em; ">
+  <label>Site Name</label><input class="text" name="name" value="{{ name }}" onBlur="checkSiteName( this );" > <span class="form_text">letters, numbers, periods allowed</span><br />
+  <label>Username</label><input class="text" name="username" value="{{ username }}"><br />
+  <label>Email Address</label><input class="text" name="email" size="40" value="{{ email }}"><br />
+  <label>Password</label><input class="text" name="pass1" value="{{ pass1 }}" type="password"><br />
+  <label>Password Again</label><input class="text" name="pass2" value="{{ pass2 }}" type="password" ><br />
+  <label>Secondary Email Address</label><input class="text" name="email2" size="40" value="{{ email2 }}"> <span class="form_text">optional</span><br /> 
+  <label>Phone Number</label><input class="text" name="phone" value="{{ phone }}"> <span class="form_text">optional - if there is a problem we would like a way to reach you</span><br /><br /> 
+</div>

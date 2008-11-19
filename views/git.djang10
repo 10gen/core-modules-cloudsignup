@@ -1,0 +1,60 @@
+<div style="font-size:108%; ">
+
+  <p>
+    The 10gen grid management system uses git for version control.  
+    You must have a git repository hosted somewhere that 10gen can access. 
+  </p>
+ 
+  <p>
+  There are three recommended methods:
+  </p>
+
+  <ul class="nobullet">
+
+    <li>
+      <input type="radio" name="git_choice" value="new_github" onClick="gitChoice(1)" >
+      <b>create a new github account</b><br>
+      <div id="git_1" class="git_option">
+        <p>New Github Account Name: <input name="github_new" value="{{ github_new }}" ></p>
+      </div>
+    </li>
+
+    
+    <li>
+      <input type="radio" name="git_choice" value="old_github" onClick="gitChoice(2)" >
+      <b>use an existing github account</b><br>
+      <div id="git_2" class="git_option" style="font-size: 108%; ">
+        <p>We recommend forking from <a href="http://github.com/10gen/template-github-hello-world/tree/master">our hello world template</a></p>
+        <p>If you make it public you can give us the public git url</p>
+        <p>If you want it to be private, you just have to add 10gen as a collaborator</p>
+		<p>
+        <label style="width: 20em; ">Current Github Account Name:</label><input name="github_old" value="{{ github_old }}" ><br />
+        <label style="width: 20em; ">Github Repository Name:</label><input name="github_site" value="{{ github_site }}" > <br />
+        <label style="width: 20em; ">Private:</label><input type="checkbox" name="github_private" value="true" >
+        </p>
+      </div>
+    </li>
+
+    
+    <li>
+      <input type="radio" name="git_choice" value="custom" onClick="gitChoice(3)" >
+      <b>use your own git repository</b><br>
+      <div id="git_3" class="git_option" >
+        <p>Git Clone URL <input class="text" style="width: 320px; " name="giturl" value="{{ giturl }}"></p>
+        <p>if you are using a custom server, and it uses ssh, you need to grant 10gen read access.</p>
+        <p>this is the public key we will use</p>
+        <p style="color: #aaa; font-size: 10px;">
+          ssh-dss AAAAB3NzaC1kc3MAAACBAK/n0f2W3cpj/Ty5JgIan+v2ggPcAmMBukKWt+50X/i5n3uF7jMdAnppGxJnU7dsTqPIBO2ImzlBK42Zzh961KS<br>
+          GKSl5m4ke6JN/YR3wfOZavhLdKRlGtCORJX68pVI1iqjNZIMkmp3RAkt5KaU7jEy6PX6Lu/ThNH91YxevuoTLAAAAFQDEB6wbUTTjoEkqe902MzgfwM<br>
+          T/mwAAAIEAn6fSGzTClDAPQkmXcmX+nRtQZ6DIITIzUpZ0dqQPmcxXazPrk5095xa8EZpU33ct6pvkuXQSTvb9olPxXDYsEXApyjiy2VJiMsAwbHVyU<br>
+          w7A8d9XTwyXn82vHQiYKBPFw6OQBB0eS7h4sHZwlCA5db7m1sH129HyXH7Dre78kaQAAACBAJ5af4i+RVpjA3C8lXjtNE8Dg1G4PP5dGoOBogkWUgHo<br>
+          cuOCizLw1ydFOXsb1QqTSyUhGzhFVeyiYioToSce1OkbfyJ6J/qHA9t8JcGl//9sN0n8yl0MMw3ScYuENWTmfdW0nsGj+TbPG4nSFckw4NgxY0pQYCF<br>
+          fk4W8A+wMPb5t yellow@iad-sb-n1.10gen.com      
+        </p>
+      </div>
+    </li>
+
+
+  </ul>
+</div>  
+
