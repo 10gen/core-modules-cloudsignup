@@ -1,5 +1,7 @@
 activePage = 'cloudSignup';
 
+head.push('<link type="text/css" rel="stylesheet" href="/~~/modules/cloudsignup/assets/styles.css" />');
+
 var theCloud = javaStatic( "ed.cloud.Cloud" , "getInstanceIfOnGrid" );
 assert( theCloud , "no cloud environment available" );
 
