@@ -1,4 +1,4 @@
-<div class="form-su">
+<div id="xgen_form_su">
   <label>Site Name</label><input class="text" name="name" value="{{ name }}" onBlur="checkSiteName( this );" ><br />
   <label></label><span class="form_text">letters, numbers, periods allowed</span><br />
   <label>Username</label><input class="text" name="username" value="{{ username }}"><br />

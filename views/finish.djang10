@@ -1,4 +1,4 @@
-
+<div id="10gen_success">
 <h1>Congratulations, your site has been created!</h1>
 
 <p>
@@ -8,3 +8,4 @@
 <p>
   You can view your admin console at <a href="http://{{ name }}.10gen.com/admin/">http://{{ name }}.10gen.com/admin/</a>
 </p>
+</div>

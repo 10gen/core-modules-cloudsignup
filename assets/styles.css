@@ -30,43 +30,31 @@ i {
 	font-style: italic;
 }
 
-img {
-	border: none;
-}
-
 /* form */
 
-div.form-su {
+div#xgen-form-su {
 	margin: 1em 0 2em 0; 
 	padding: 1em; 
 	border: 1px solid #ddd;
 }
 
-input.submit {
+div#xgen-form-su input.submit, form.xgen-edit input.submit {
 	cursor: pointer;
-}
-
-.entry-content {
-	margin-bottom: 2em;
-}
-
-.addcomment {
-	padding-bottom: 0;
 }
 
 /* Sign Up Form */
 
-form.edit {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+form.xgen-edit {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
 	margin: 0;
 	padding: 0;
 	font-size: 12px;
 }
 
-form.edit textarea {
+form.xgen-edit textarea {
 	width: auto;
 }
 
-form.edit fieldset, div.fieldset {
+form.xgen-edit fieldset, div.fieldset {
 	width: auto;
   	border: 1px solid #dddddd;
   	padding: 20px 10px;        /* padding in fieldset support spotty in IE */
@@ -74,28 +62,24 @@ form.edit fieldset, div.fieldset {
   	/ * clear: both; note that this clear causes inputs to break to left in ie5.x mac, commented out */
 }
 
-form.edit input.text {
+form.xgen-edit input.text {
 	width: 230px;
 	border: 1px solid;
 	border-color: #999 #ccc #ccc #999;
 }
 
-form.edit input.submit, input.button {
+form.xgen-edit input.submit, input.button {
 	border: 1px solid;
 	border-color: #ccc #999 #999 #ccc;
 }
 
-form.edit .form_text {
+form.xgen-edit .form_text {
 	position: relative;
 	top: 1px;
 	left: 10px; 
 } 
 
-legend {
-	font-size: 123%; 
-}
-
-form.edit label {
+form.xgen-edit label {
 	display: block;  /* block float the labels to left column, set a width */
 	float: left;
 	width: 14em;
@@ -105,22 +89,22 @@ form.edit label {
 	font-weight: bold;
 }
 
-form.edit input, form.edit textarea, form.edit select {
+form.xgen-edit input, form.xgen-edit textarea, form.xgen-edit select {
 	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
 	width:auto;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
 	margin:10px 0 0 10px; /* set margin on left of form elements rather than right of
                               label aligns textarea better in IE */
 }
 
-form.edit textarea { overflow: auto; }
+form.xgen-edit textarea { overflow: auto; }
 
-form.edit .required{font-weight:bold;} /* uses class instead of div, more efficient */
+form.xgen-edit .required{font-weight:bold;} /* uses class instead of div, more efficient */
 
-form.edit br {
+form.xgen-edit br {
 	clear:left; /* setting clear on inputs didn't work consistently, so brs added for degrade */
 }
 
-input.submit_button {
+input.xgen-submit_button {
 	border-color:#CCC #999 #999 #CCC;
 	border-style:solid;
 	border-width:1px;
@@ -130,41 +114,12 @@ input.submit_button {
 	text-transform: uppercase;
 }
 
-.floatright {
-	float: right;
-}
-
-.floatleft {
-	float: left;
-}
-
-.clearboth {
-	clear:both;
-}
-
-.aligncenter {
-	text-align:center;
-}
-
-.alert {
-    text-align: center;
-    color: #519a33;
-    font-weight: bold;
-}
-
-.notice {
-	margin-bottom: 1em; 
-    text-align: center;
-    color: #ff6600;
-    font-weight: bold;
-}
-
-ul.nobullet {
+ul.xgen-nobullet {
 	margin:0;
 	padding:0;
 }
 
-ul.nobullet li {
+ul.xgen-nobullet li {
 	margin:0;
 	padding:0;
 	background-image: none;
@@ -172,7 +127,7 @@ ul.nobullet li {
 	padding-left: 0;
 }
 
-div.git_option {
+div.xgen-git_option {
 	margin: .5em 0 0 0;
 	display: none;  
 	padding: 1em; 
@@ -180,11 +135,11 @@ div.git_option {
 	font-size: 108%;
 }
 
-.git_option label {
+.xgen-git_option label {
 	width: 400px;
 }
 
-p.agree {
+p.xgen-agree {
 	margin-top: 1em; 
 	font-size: 100%;
 }
