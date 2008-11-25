@@ -14,7 +14,7 @@
     <li>
       <input type="radio" name="git_choice" value="new_github" onClick="gitChoice(1)" >
       <b>create a new github account</b><br>
-      <div id="git_1" class="xgen-git_option">
+      <div id="git_1" class="xgen-git-option ">
         <p>New Github Account Name: <input class="text" name="github_new" value="{{ github_new }}" ></p>
       </div>
     </li>
@@ -23,7 +23,7 @@
     <li>
       <input type="radio" name="git_choice" value="old_github" onClick="gitChoice(2)" >
       <b>use an existing github account</b><br>
-      <div id="git_2" class="xgen-git_option" style="font-size: 108%; ">
+      <div id="git_2" class="xgen-git-option">
         <p>We recommend forking from <a href="http://github.com/10gen/template-github-hello-world/tree/master">our hello world template</a></p>
         <p>If you make it public you can give us the public git url</p>
         <p>If you want it to be private, you just have to add 10gen as a collaborator</p>
@@ -39,7 +39,7 @@
     <li>
       <input class="text"  type="radio" name="git_choice" value="custom" onClick="gitChoice(3)" >
       <b>use your own git repository</b><br>
-      <div id="git_3" class="xgen-git_option" >
+      <div id="git_3" class="xgen-git-option " >
         <p>Git Clone URL <input class="text" class="text" name="giturl" value="{{ giturl }}"></p>
         <p>if you are using a custom server, and it uses ssh, you need to grant 10gen read access.</p>
         <p>this is the public key we will use</p>
