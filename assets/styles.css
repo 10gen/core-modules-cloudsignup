@@ -32,13 +32,13 @@ i {
 
 /* form */
 
-div#xgen-form-su {
+div#xgen_form_su {
 	margin: 1em 0 2em 0; 
 	padding: 1em; 
 	border: 1px solid #ddd;
 }
 
-div#xgen-form-su input.submit, form.xgen-edit input.submit {
+div#xgen_form_su input.submit, form.xgen-edit input.submit {
 	cursor: pointer;
 }
 
@@ -66,6 +66,7 @@ form.xgen-edit input.text {
 	width: 230px;
 	border: 1px solid;
 	border-color: #999 #ccc #ccc #999;
+	padding: 2px;
 }
 
 form.xgen-edit input.submit, input.button {
@@ -75,8 +76,10 @@ form.xgen-edit input.submit, input.button {
 
 form.xgen-edit .form_text {
 	position: relative;
-	top: 1px;
+	top: 2px;
 	left: 10px; 
+	font-size: 11px;
+	font-style: italic;
 } 
 
 form.xgen-edit label {
@@ -84,7 +87,7 @@ form.xgen-edit label {
 	float: left;
 	width: 14em;
 	padding: 0;
-	margin: 14px 0 0; /* set top margin same as form input - textarea etc. elements */
+	margin: 15px 0 0; /* set top margin same as form input - textarea etc. elements */
 	text-align: right;
 	font-weight: bold;
 }
@@ -135,11 +138,16 @@ div.xgen-git_option {
 	font-size: 108%;
 }
 
-.xgen-git_option label {
-	width: 400px;
+div.xgen-git_option label {
+	width: 200px;
 }
 
 p.xgen-agree {
 	margin-top: 1em; 
 	font-size: 100%;
+}
+
+p.xgen-key {
+	 color: #aaa;
+	font-size: 10px;
 }
