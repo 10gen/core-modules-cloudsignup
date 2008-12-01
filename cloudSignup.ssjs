@@ -41,6 +41,8 @@ var data = {
     github_new : request.github_new ,
     github_old : request.github_old ,
     github_site : request.github_site ,
+
+    externalDomain : javaStatic( "ed.util.Config" , "getExternalDomain" )
 };
 
 db.signupAttempts.save( data );

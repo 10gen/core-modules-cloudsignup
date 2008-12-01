@@ -2,9 +2,9 @@
 <h1>Congratulations, your site has been created!</h1>
 
 <p>
-  You can view your site at <a href="http://{{ name }}.10gen.com/">http://{{ name }}.10gen.com</a>
+  You can view your site at <a href="http://{{ name }}.{{ externalDomain }}/">http://{{ name }}.10gen.com</a>
 </p>
 
 <p>
-  You can view your admin console at <a href="http://{{ name }}.10gen.com/admin/">http://{{ name }}.10gen.com/admin/</a>
+  You can view your admin console at <a href="http://{{ name }}.{{ externalDomain }}/admin/">http://{{ name }}.10gen.com/admin/</a>
 </p>
