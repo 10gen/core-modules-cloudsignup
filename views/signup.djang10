@@ -1,18 +1,10 @@
-
 <script src="/~~/ui/js/common.js"></script>
 <script src="/~~/modules/cloudsignup/assets/help.js"></script>
 
-<style>
-	#leftmain {
-	  border-right:none; 
-	}
-	h2 {border:none; }
-</style>
-
-<div class="container">
+<div id="xgen_cloud_signup">
   <p>Develop your application with the 10gen <a href="/wiki/SDK">SDK</a> and then deploy it to the cloud.<br />10gen cloud usage is free for the alpha, and 
   subject to quota restrictions.  See the <a href="/wiki/FAQ.Cloud">cloud FAQ</a> for more information.</p>
-	<form id="signup_form" class="edit" method="post" action="/cloudSignup" onSubmit="return validateInformation(this)" >
+	<form id="signup_form" class="xgen-edit" method="post" action="/cloudSignup" onSubmit="return validateInformation(this)" >
 	<input type="hidden" name="action" value="signup">
 	<div>
 		<h2>Site Information</h2>
@@ -22,11 +14,9 @@
 		<h2>Git Information</h2>
 		  {% include "/core/modules/cloudsignup/views/git" %}
 
-
-		
-		  <p style="margin-top: 1em; font-size: 100%; ">
+		  <p class="xgen-agree">
 		    <input type="checkbox" name="agree" value="t"> <b>By checking this box I agree to the <a href="/terms">terms of service</a></b><br />
-		    <input type="image" src="/assets/images/button_submit_onwhite.gif" name="prettyAction" value="Finish">
+		    <input type="submit" class="xgen-submit_button" name="prettyAction" value="Finish">
 		  </p>
 	</div>
 	</form>

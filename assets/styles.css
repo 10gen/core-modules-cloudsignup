@@ -1,0 +1,148 @@
+body {
+ 	margin: 1em;
+	padding: 0;
+	font-family: helvetica, arial, sans-serif;
+	background-color: #ffffff;
+	color: #333;
+}
+
+div, p, ul, ol, code {
+	font-family: helvetica, arial, sans-serif;
+}
+
+h1, h2, h3, h4, p, ul, ol, dl {
+	margin-top: 1em;
+}
+
+hr {
+	margin: 1.5em 0 2em 0;
+	border: 0;
+	width: 100%;
+	color: #ebebdc;
+	background-color: #ebebdc;
+	height: 1px;
+}
+
+i {
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* form */
+
+div#xgen_form_su {
+	margin: 1em 0 2em 0; 
+	padding: 1em; 
+	border: 1px solid #ddd;
+}
+
+div#xgen_form_su input.submit, form.xgen-edit input.submit {
+	cursor: pointer;
+}
+
+/* Sign Up Form */
+
+form.xgen-edit {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+form.xgen-edit textarea {
+	width: auto;
+}
+
+form.xgen-edit fieldset, div.fieldset {
+	width: auto;
+  	border: 1px solid #dddddd;
+  	padding: 20px 10px;        /* padding in fieldset support spotty in IE */
+  	margin: 0;
+  	/ * clear: both; note that this clear causes inputs to break to left in ie5.x mac, commented out */
+}
+
+form.xgen-edit input.text {
+	width: 230px;
+	border: 1px solid;
+	border-color: #999 #ccc #ccc #999;
+	padding: 2px;
+}
+
+form.xgen-edit input.submit, input.button {
+	border: 1px solid;
+	border-color: #ccc #999 #999 #ccc;
+}
+
+form.xgen-edit .form_text {
+	position: relative;
+	top: 2px;
+	left: 10px; 
+	font-size: 11px;
+	font-style: italic;
+} 
+
+form.xgen-edit label {
+	display: block;  /* block float the labels to left column, set a width */
+	float: left;
+	width: 14em;
+	padding: 0;
+	margin: 15px 0 0; /* set top margin same as form input - textarea etc. elements */
+	text-align: right;
+	font-weight: bold;
+}
+
+form.xgen-edit input, form.xgen-edit textarea, form.xgen-edit select {
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:auto;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:10px 0 0 10px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+}
+
+form.xgen-edit textarea { overflow: auto; }
+
+form.xgen-edit .required{font-weight:bold;} /* uses class instead of div, more efficient */
+
+form.xgen-edit br {
+	clear:left; /* setting clear on inputs didn't work consistently, so brs added for degrade */
+}
+
+input.xgen-submit_button {
+	border-color:#CCC #999 #999 #CCC;
+	border-style:solid;
+	border-width:1px;
+	background-color: #f0f0f0;
+	color: #333;
+	text-transform: uppercase;
+}
+
+ul.xgen-nobullet {
+	margin:0;
+	padding:0;
+}
+
+ul.xgen-nobullet li {
+	margin:0;
+	padding:0;
+	background-image: none;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+div.xgen-git-option  {
+	margin: .5em 0 0 0;
+	display: none;  
+	padding: 1em; 
+	border: 1px solid #eee;
+}
+
+div.xgen-git-option  label {
+	width: 200px;
+}
+
+p.xgen-agree {
+	margin-top: 1em; 
+}
+
+p.xgen-key {
+	 color: #aaa;
+	font-size: 10px;
+}
