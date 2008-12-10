@@ -2,8 +2,8 @@
 <script src="/~~/modules/cloudsignup/assets/help.js"></script>
 
 <div id="xgen_cloud_signup">
-  <p>Develop your application with the 10gen <a href="http://www.10gen.com//wiki/SDK">SDK</a> and then deploy it to the cloud.<br />10gen cloud usage is free for the alpha, and 
-  subject to quota restrictions.  See the <a href="http://www.10gen.com//wiki/FAQ.Cloud">cloud FAQ</a> for more information.</p>
+  <p>Develop your application with the 10gen <a href="http://www.10gen.com/wiki/SDK">SDK</a> and then deploy it to the cloud.<br />10gen cloud usage is free for the alpha, and 
+  subject to quota restrictions.  See the <a href="http://www.10gen.com/wiki/FAQ.Cloud">cloud FAQ</a> for more information.</p>
 	<form id="signup_form" class="xgen-edit" method="post" action="/cloudSignup" onSubmit="return validateInformation(this)" >
 	<input type="hidden" name="action" value="signup">
 	<div>
